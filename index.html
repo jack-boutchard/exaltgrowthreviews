@@ -61,6 +61,16 @@
   .nav-links { display: flex; gap: 22px; align-items: center; }
   .nav-links a { color: #cdded6; font-weight: 500; font-size: 0.95rem; transition: color .15s; }
   .nav-links a:hover { color: var(--accent); }
+  .nav-actions { display: flex; align-items: center; gap: 12px; }
+  .nav-toggle {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 42px; height: 42px; padding: 0; background: transparent;
+    border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; cursor: pointer;
+  }
+  .nav-toggle .bar { display: block; width: 20px; height: 2px; margin: 0 auto; background: #cdded6; transition: transform .2s, opacity .2s; }
+  .nav-toggle[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     font-weight: 600; font-size: 0.95rem; padding: 12px 22px; border-radius: 999px;
@@ -195,7 +205,16 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-links {
+      position: absolute; top: 72px; left: 0; right: 0;
+      flex-direction: column; align-items: stretch; gap: 0;
+      background: #090909; border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 6px 0; display: none; box-shadow: 0 18px 30px -16px rgba(0,0,0,0.6);
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 13px 24px; font-size: 1rem; }
+    .nav-links a:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.05); }
     .review-card { padding: 28px 22px; }
   }
   @media (max-width: 540px) {
@@ -209,7 +228,7 @@
 <header class="site">
   <div class="container nav">
     <a href="https://www.exaltgrowth.com" class="brand"><img src="https://cdn.prod.website-files.com/66b96d4e80fb812204d4e685/695db324232e643c844ff35e_exalt-growth-logo-p-500.jpg" alt="Exalt Growth" /></a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="https://www.exaltgrowth.com/services?exaltgrowthreviewswebsite">Services</a>
       <a href="https://www.exaltgrowth.com/methodology?exaltgrowthreviewswebsite">SEO Methodology</a>
       <a href="https://www.exaltgrowth.com/results?exaltgrowthreviewswebsite">Our Results</a>
@@ -217,7 +236,12 @@
       <a href="#faq">FAQs</a>
       <a href="https://www.exaltgrowth.com/contact?exaltgrowthreviewswebsite">Contact</a>
     </nav>
-    <a href="https://www.exaltgrowth.com/contact?exaltgrowthreviewswebsite" class="btn btn-primary">Get in Touch</a>
+    <div class="nav-actions">
+      <a href="https://www.exaltgrowth.com/contact?exaltgrowthreviewswebsite" class="btn btn-primary">Get in Touch</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -599,6 +623,24 @@
     <div class="copyright">© 2026 Exalt Growth. All rights reserved.</div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('navLinks');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
