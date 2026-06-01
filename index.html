@@ -49,19 +49,18 @@
   /* ---------- Header ---------- */
   header.site {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
+    background: #090909;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   .nav {
     display: flex; align-items: center; justify-content: space-between;
     height: 72px;
   }
-  .brand { display: flex; align-items: center; gap: 10px; font-family: "Nunito Sans"; font-weight: 800; font-size: 1.2rem; }
-  .brand .mark { width: 30px; height: 30px; display: block; flex-shrink: 0; }
+  .brand { display: flex; align-items: center; flex-shrink: 0; }
+  .brand img { height: 34px; width: auto; display: block; }
   .nav-links { display: flex; gap: 28px; align-items: center; }
-  .nav-links a { color: var(--ink-soft); font-weight: 500; font-size: 0.95rem; transition: color .15s; }
-  .nav-links a:hover { color: var(--accent-text); }
+  .nav-links a { color: #cdded6; font-weight: 500; font-size: 0.95rem; transition: color .15s; }
+  .nav-links a:hover { color: var(--accent); }
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     font-weight: 600; font-size: 0.95rem; padding: 12px 22px; border-radius: 999px;
@@ -173,7 +172,7 @@
 
   /* ---------- CTA ---------- */
   .cta {
-    background: linear-gradient(135deg, var(--bg-dark), #0a2b1d);
+    background: #090909;
     color: #eaf6f0; text-align: center;
   }
   .cta h2 { color: #fff; font-size: clamp(1.9rem, 4vw, 2.8rem); }
@@ -196,10 +195,9 @@
 <!-- ===== Header ===== -->
 <header class="site">
   <div class="container nav">
-    <a href="#" class="brand"><svg class="mark" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Exalt Growth"><g fill="#20ce88" transform="translate(30.95 73.65) scale(0.686) translate(-17.6 -40)"><polygon points="103,40 275,40 353,88 186,88" /><polygon points="57,121 228,121 310,170 142,170" /><polygon points="17.6,203 188.6,203 270.6,251 100.6,251" /></g></svg> Exalt Growth</a>
+    <a href="https://www.exaltgrowth.com" class="brand"><img src="https://cdn.prod.website-files.com/66b96d4e80fb812204d4e685/695db324232e643c844ff35e_exalt-growth-logo-p-500.jpg" alt="Exalt Growth" /></a>
     <nav class="nav-links">
       <a href="#reviews">Reviews</a>
-      <a href="#results">Results</a>
       <a href="#faq">FAQ</a>
       <a href="https://www.exaltgrowth.com/contact?exaltgrowthreviewswebsite">Contact</a>
     </nav>
