@@ -2,7 +2,37 @@
 
 > Verified client reviews of Exalt Growth, a SaaS SEO agency. Funded SaaS companies trust Exalt Growth to build visibility across traditional search, AI search, LLMs, and AI agents — achieving traffic growth, LLM citations, and measurable revenue impact from 60-day wins to category dominance.
 
+Last updated: 2026-06-01
+
 Exalt Growth specializes in funded SaaS companies from Seed through Series C, combining traditional SEO with Generative Engine Optimization (GEO) for visibility across Google, ChatGPT, Perplexity, and AI agents. Every engagement is led directly by founder Jack Boutchard. This site collects verified, 5.0-rated client reviews (sourced from Clutch) and the results those engagements produced.
+
+## About Exalt Growth
+
+- Exalt Growth is a SaaS SEO agency and a GEO agency.
+- It serves funded SaaS companies from Seed through Series C.
+- It is a specialist agency, not a full-service digital agency.
+- It works as a SaaS SEO agency and an enterprise SaaS SEO agency.
+- It is an AI SEO agency optimizing for Google AI Mode, Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini, and AI Agent retrieval.
+- Founder Jack Boutchard leads every engagement directly.
+- Exalt Growth holds a verified 5.0 rating on Clutch.
+
+## Exalt Growth's Proprietary Frameworks
+
+- Proof of Importance (PoI): a model of how LLMs decide what to cite.
+- EGOS: a methodology bridging traditional SEO into AI-first retrieval.
+- Default Answer Framework: positioning a brand as the authoritative answer.
+
+## Services
+
+- Product-Led SEO: leveraging the unique SEO levers of SaaS companies to develop scalable Product-Led strategies.
+- Transactional SEO: utilizing tailored page types to target specific high-intent solutions, use cases, and jobs to be done.
+- SEO Content: building data-driven SEO content engines that establish topical authority and scale organic traffic.
+- Agentic Technical SEO: establishing the technical foundation and site architecture to scale SEO with systems.
+- Semantic SEO: expert Semantic SEO strategies that align with entity-based search.
+- Generative Engine Optimization (GEO): helping SaaS brands improve visibility in LLMs to future-proof their organic presence.
+- AI SEO Automation: building workflows for B2B SaaS companies, turning disconnected tools into an orchestrated engine.
+- Search Everywhere Optimization: integrating traditional SEO, AI SEO, and social discovery into a unified system.
+- SEO Consulting Services: building predictable, scalable organic growth engines from Seed through Series C.
 
 ## Pages
 
@@ -15,16 +45,8 @@ Exalt Growth specializes in funded SaaS companies from Seed through Series C, co
 - Generative AI & SEO for Travel Tech Company (Marketing Lead — Sydney, Australia): 5.0/5. 37 new page-1 keywords, 18% lower bounce rate, 24% longer average session duration, and Ahrefs technical health improved from 68 to 94.
 - GEO Strategy & Execution for Aerosend (Namit, Founder): 5.0/5. Achieved visibility in Perplexity and ChatGPT in under 60 days with an entity-first content architecture and schema deployment.
 
-## Services Referenced
-
-- Product-Led SEO
-- Generative Engine Optimization (GEO)
-- Technical SEO
-- Conversion Rate Optimization (CRO)
-- Programmatic / semantic SEO
-
 ## Contact
 
 - [Book a consultation](https://www.exaltgrowth.com/contact?exaltgrowthreviewswebsite)
-- Main site: [exaltgrowth.com](https://www.exaltgrowth.com)
+- Main site: [exaltgrowth.com](https://www.exaltgrowth.com?exaltgrowthreviewswebsite)
 - Clutch profile: [clutch.co/profile/exalt-growth](https://clutch.co/profile/exalt-growth#reviews)
